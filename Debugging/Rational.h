@@ -6,6 +6,7 @@ using namespace std;
 
 char inputChar(string prompt, string options);
 int inputInteger(string prompt);
+void mainMenu();
 
 // A rational number is a number that is expressed as the ratio of two integers, where the denominator should not be equal to zero.
 // Rational class is designed to expressed the rational number in the form of (numerator) / (denominator) 

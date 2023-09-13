@@ -4,6 +4,7 @@ using namespace std;
 
 int inputInteger(string prompt);
 char inputChar(string prompt);
+void mainMenu();
 
 class Pseudorandom
 {

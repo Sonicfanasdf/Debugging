@@ -177,7 +177,7 @@ void Rational::rational_Menu()
 		cout << "\n\t\t0> return";
 		cout << "\n\t" + string(68, char(205));
 
-		switch (toupper(inputChar("\n\t\tOption: ", static_cast<string>("ABCDEFGHIJ"))))
+		switch (toupper(inputChar("\n\t\tOption: ", static_cast<string>("ABCDEFGHIJ0"))))
 		{
 		case 'A':
 
@@ -256,7 +256,7 @@ void Rational::rational_Menu()
 
 			break;
 
-		case '0': return;
+		case '0': system("cls"); mainMenu(); return;
 		}
 		cout << "\n";
 		system("pause");
