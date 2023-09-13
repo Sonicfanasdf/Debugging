@@ -15,15 +15,16 @@
  Otoniel Torres Bernal & John Kim  - Part 3: Rational Number
  */
 
+#include <iomanip>
 #include "QuadraticExpression.h"
 #include "Pseudorandom.h"
+#include "Rational.h"
 #include "input.h"
 
 void mainMenu();
 
 int main()
 {
-    QuadraticExpression quadraticExpression;
 
     mainMenu();
 
@@ -34,6 +35,8 @@ void mainMenu()
 {
     QuadraticExpression quadraticExpression;
     Pseudorandom pseudorandom;
+    Rational rational;
+
     // Main Menu
 
     cout << endl;
@@ -57,7 +60,7 @@ void mainMenu()
         case 0: exit(1); break;
         case 1: system("cls"); quadraticExpression.quadraticExpressionMenu(); break;
         case 2: system("cls"); pseudorandom.pseudorandomMenu(); break;
-        case 3: system("cls");  break;
+        case 3: system("cls"); rational.rational_Menu(); break;
 
         }
 
